@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #000;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 10px auto 0px auto;
+    padding: 0px 15px 0px 15px;
+    width: 90%;
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 0;
+    left: 0px;
+    border-radius: 20px;
+    background-color: #c7c7c7;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.logo {
+    width: 13%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nav {
+    width: 36%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.div__for {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 11px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.div__for:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav__link {
+    margin: 13px;
+    font-size: 18px;
+}
+
+.nav2 {
+    width: 13%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+header:hover {
+    position: relative;
+    top: 0;
+    left: 50%;
+}

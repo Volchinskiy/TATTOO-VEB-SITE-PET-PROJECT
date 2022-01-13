@@ -1,0 +1,93 @@
+// RESET
+
+// SETTING
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #000;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+// ANIMATION
+
+// HEADER
+
+.header{
+    margin: 10px auto 0px auto;
+    padding: 0px 15px 0px 15px;
+
+    width: 90%;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    top: 0;
+    left: 0px;
+
+    border-radius: 20px;
+    background-color: rgb(199, 199, 199);
+
+
+
+    transition: all .4s;
+}
+
+.logo{
+    width: 13%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav{
+    width: 36%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div__for{
+    width: fit-content;
+    height: 29px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 11px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    transition: all 0.6s;
+}
+
+.div__for:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav__link{
+    margin: 13px;
+    font-size: 18px;
+}
+
+.nav2{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+}
+
+header:hover{
+    position: relative;
+    top: 0;
+    left: 50%;
+}
