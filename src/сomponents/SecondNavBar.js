@@ -1,5 +1,11 @@
 import React from 'react';
 
+function closeMenu() {
+    const secondNavbar = document.querySelector('.second-navbar');
+
+    secondNavbar.classList.remove('--rightZero');
+}
+
 export default function SecondNavBar() {
   return <div className="second-navbar">
                 
@@ -12,7 +18,7 @@ export default function SecondNavBar() {
             </nav>
 
             <div className="second-navbar__button-wrapper">
-                <button className="second-navbar__button">Назад</button>
+                <button onClick={closeMenu} className="second-navbar__button">Назад</button>
             </div>
 
          </div>;
