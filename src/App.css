@@ -125,7 +125,7 @@ body {
 
 .second-navbar {
   width: 250px;
-  height: 110vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +140,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 30px 20px 0px 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -250px;
   z-index: 10;
@@ -226,46 +226,181 @@ body {
   background-color: #919191;
 }
 
+.header__button-wrapper {
+  width: 200px;
+  height: 45px;
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__memu-button {
   width: 200px;
   height: 45px;
   border: 0;
   border-radius: 18px;
-  position: fixed;
-  top: 10px;
-  right: 37px;
-  z-index: 9;
-  opacity: 0.5;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  background-color: #919191;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .header__memu-button:hover {
-  opacity: 1;
+  background-color: white;
+}
+
+.header__memu-button:active {
+  width: 192px;
+  height: 42px;
 }
 
 .first-screen {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.first-screen__left-side {
+  max-width: 50%;
+  position: absolute;
+  left: -9%;
+  top: -15%;
+  z-index: -1;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
 
 .first-screen__induction {
-  max-width: 145%;
-  max-height: 145%;
-  position: absolute;
-  top: -35%;
-  left: -30%;
-  z-index: 0;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.first-screen__content {
+  width: 57%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.first-screen__content-wrapper {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-screen__avatar {
+  max-width: 50%;
+  max-height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10% 0px 0px 0px;
+  border-radius: 50%;
+}
+
+.first-screen__text-wrapper {
+  width: 50%;
+  padding: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 30px;
+}
+
+.first-screen__title {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+  font-size: calc(20px + 16 * (100vw / 2650));
+  font-weight: 600;
+  color: #fff;
+}
+
+.first-screen__text {
+  width: 100%;
+  text-align: center;
+  font-size: calc(16px + 6 * (100vw / 2650));
+  color: #fff;
+}
+
+.first-screen__button-wrapper {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-screen__portfolioBtn {
+  width: 210px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.first-screen__costBtn {
+  width: 210px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.first-screen__portfolioBtn:hover, .first-screen__costBtn:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .--displayNone {
   display: none;
-}
-
-.--displayFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .--opacityZero {
@@ -274,8 +409,4 @@ body {
 
 .--rightZero {
   right: 0;
-}
-
-.--visibilityHidden {
-  visibility: hidden;
 }

@@ -1,9 +1,10 @@
 import React from 'react';
-import inductionPng from './inductionPng.png';
+import LeftSide from './LeftSide';
+import RightSide from './RightSide';
 
-export default function ALL() {
+export default function FirstScreen() {
   return <div className="first-screen">
-      <img className="first-screen__induction" src={inductionPng} />
-      {/* <img className="img" src={} /> */}
-  </div>;
+          <LeftSide />
+          <RightSide />
+         </div>;
 }
