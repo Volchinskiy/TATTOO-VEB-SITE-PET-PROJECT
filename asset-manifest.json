@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tattoo-veb-site/static/css/main.1f670e08.css",
+    "main.js": "/tattoo-veb-site/static/js/main.581acfb9.js",
+    "static/media/inductionPng.png": "/tattoo-veb-site/static/media/inductionPng.91813a1e427a9ee542ce.png",
+    "static/media/avatar.jpg": "/tattoo-veb-site/static/media/avatar.a950fd29ccf0671b5f33.jpg",
+    "static/media/Raleway.ttf": "/tattoo-veb-site/static/media/Raleway.3fefe681f4c62116679b.ttf",
+    "index.html": "/tattoo-veb-site/index.html",
+    "main.1f670e08.css.map": "/tattoo-veb-site/static/css/main.1f670e08.css.map",
+    "main.581acfb9.js.map": "/tattoo-veb-site/static/js/main.581acfb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f670e08.css",
+    "static/js/main.581acfb9.js"
+  ]
+}
