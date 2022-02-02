@@ -181,7 +181,7 @@ body{
 
 .second-navbar__button-wrapper{
     width: 100%;
-    height: 10%;
+    height: 50px;
     
     display: flex;
     justify-content: center;
@@ -197,21 +197,26 @@ body{
     background-color: #000;
     color: #fff;
 
-    transition: all .6s;
+    transition: all .3s;
 }
 
 .second-navbar__button:hover{
     background-color: rgb(145, 145, 145);
 }
 
+.second-navbar__button:active{
+    width: 147px;
+    height: 35px;
+}
+
 //
 .header__button-wrapper{
-    width: 200px;
+    width: 165px;
     height: 45px;
 
     position: fixed;
     top: 15px;
-    right: 25px;
+    right: 15px;
     z-index: 9;
 
     display: flex;
@@ -220,14 +225,14 @@ body{
 }
 
 .header__memu-button{
-    width: 200px;
+    width: 150px;
     height: 45px;
 
     border: 0;
     border-radius: 18px;
 
     background-color: rgb(145, 145, 145);
-    transition: all .1s;
+    transition: all .3s;
 }
 
 .header__memu-button:hover{
@@ -235,7 +240,7 @@ body{
 }
 
 .header__memu-button:active{
-    width: 192px;
+    width: 162px;
     height: 42px;
 }
 
@@ -251,7 +256,7 @@ body{
 }
 
 .first-screen__left-side{
-    max-width: 50%;
+    max-width: 45%;
     
     position: absolute;
     left: -9%;
@@ -267,8 +272,9 @@ body{
     object-fit: cover;
 }
 
-.first-screen__content{
-    width: 57%;
+//
+.first-screen__right-side{
+    width: fit-content;
     height: 100%;
 
     display: flex;
@@ -280,6 +286,8 @@ body{
 .first-screen__content-wrapper{
     width: 100%;
     height: 70%;
+
+    padding: 0px 16px 0px 16px;
 
     display: flex;
     justify-content: center;
@@ -306,7 +314,7 @@ body{
 
 .first-screen__title{
     width: 100%;
-    height: 100%;
+    // height: 100%;
 
     margin: 0px 0px 40px 0px;
 
@@ -320,7 +328,6 @@ body{
 .first-screen__text{
     width: 100%;
     
-
     text-align: center;
 
     font-size: calc(16px + 6 * (100vw / 2650));
@@ -337,14 +344,17 @@ body{
 }
 
 .first-screen__portfolioBtn{
-    width: 210px;
-    height: 60px;
+    min-width: 280px;
+    min-height: 60px;
+
+    width: 20vw;
+    height: 5vw;
 
     border: 2px solid #fff;
     border-radius: 18px;
 
     color: #fff;
-    font-size: 16px;
+    font-size: calc(16px + 6 * (100vw / 2650));
     font-weight: 600;
 
     background-color: #000;
@@ -353,14 +363,17 @@ body{
 }
 
 .first-screen__costBtn{
-    width: 210px;
-    height: 60px;
+    min-width: 280px;
+    min-height: 60px;
+
+    width: 20vw;
+    height: 5vw;
 
     border: 2px solid #fff;
     border-radius: 18px;
 
     color: #fff;
-    font-size: 16px;
+    font-size: calc(16px + 6 * (100vw / 2650));
     font-weight: 600;
 
     background-color: #000;
@@ -386,6 +399,46 @@ body{
     right: 0;
 }
 
+// MEDIA
+@media (max-width: 1188px){
+    .first-screen__left-side{
+        display: none;
+    }
+
+    .first-screen__right-side{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .header__button-wrapper{
+        width: 100px;
+    }
+
+    .header__memu-button{
+        width: 80px;
+        height: 35px;
+    }
+
+    .first-screen__content-wrapper{
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .first-screen__text-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .first-screen__title{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .first-screen__button-wrapper{
+        flex-direction: column;
+    }
+}
 
 // 25px
 // 15px
