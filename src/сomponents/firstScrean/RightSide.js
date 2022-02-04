@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from './../../img/avatar.jpg';
+import avatar from './../../img/firstScreen/avatar.jpg';
 
 export default function RightSide() {
   return <div className="first-screen__right-side">

@@ -1,5 +1,5 @@
 import React from 'react';
-import inductionPng from './../../img/inductionPng.png';
+import inductionPng from './../../img/firstScreen/inductionPng.png';
 
 export default function LeftSide() {
   return <div className="first-screen__left-side">

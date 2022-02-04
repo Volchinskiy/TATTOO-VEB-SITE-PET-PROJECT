@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './сomponents/header/Header';
 import FirstScreen from './сomponents/firstScrean/FirstScreen';
+import PortfolioSection from './сomponents/portfolioSection/PortfolioSection';
 
 setTimeout(function(){
   const firstNavbar = document.querySelector('.first-navbar');
@@ -22,6 +23,7 @@ function App() {
     <div>
       <Header />
       <FirstScreen />
+      <PortfolioSection />
     </div>
   );
 }
