@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tattoo-veb-site/static/css/main.4398feaa.css",
+    "main.css": "/tattoo-veb-site/static/css/main.7979fbd5.css",
     "main.js": "/tattoo-veb-site/static/js/main.e8d159d1.js",
     "static/media/inductionPng.png": "/tattoo-veb-site/static/media/inductionPng.91813a1e427a9ee542ce.png",
     "static/media/1.jpg": "/tattoo-veb-site/static/media/1.fbe85befb95dacf7edeb.jpg",
@@ -10,11 +10,11 @@
     "static/media/Raleway.ttf": "/tattoo-veb-site/static/media/Raleway.3fefe681f4c62116679b.ttf",
     "static/media/bg.png": "/tattoo-veb-site/static/media/bg.f330773013f734d04e4b.png",
     "index.html": "/tattoo-veb-site/index.html",
-    "main.4398feaa.css.map": "/tattoo-veb-site/static/css/main.4398feaa.css.map",
+    "main.7979fbd5.css.map": "/tattoo-veb-site/static/css/main.7979fbd5.css.map",
     "main.e8d159d1.js.map": "/tattoo-veb-site/static/js/main.e8d159d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4398feaa.css",
+    "static/css/main.7979fbd5.css",
     "static/js/main.e8d159d1.js"
   ]
 }
