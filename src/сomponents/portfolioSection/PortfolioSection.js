@@ -29,14 +29,8 @@ import img19 from './../../img/portfolioImg/portfolio7Row/1.jpg';
 import img20 from './../../img/portfolioImg/portfolio7Row/2.jpg'; 
 import img21 from './../../img/portfolioImg/portfolio7Row/3.jpg';
 
-import bg from './../../img/portfolioImg/bg.png';
-
 export default function PortfolioSection() {
   return <div className="portfolioSection"> 
-
-            {/* <div className="portfolioSection__background-wrapper"> 
-              <img className="portfolioSection__background" src={bg} />
-            </div> */}
 
             <div className="portfolioSection__tittle">Портфолио</div>
             <div className="portfolioSection__subtittle">Графика-Дотворк</div>
