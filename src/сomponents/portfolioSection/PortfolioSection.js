@@ -32,7 +32,7 @@ import img21 from './../../img/portfolioImg/portfolio7Row/3.jpg';
 export default function PortfolioSection() {
   return <div className="portfolioSection"> 
 
-            <div className="portfolioSection__tittle">Портфолио</div>
+            <div className="portfolioSection__tittle" id="portfolio">Портфолио</div>
             <div className="portfolioSection__subtittle">Графика-Дотворк</div>
 
             <div className="portfolioSection__row1920"> 
@@ -75,7 +75,7 @@ export default function PortfolioSection() {
             </div>
 
             <div className="portfolioSection__button-wrapper">
-              <button className="portfolioSection__button">Больше Работ В Instagram</button>
+                <a href='https://www.instagram.com/vovkttt/'><button className="portfolioSection__button">Больше Работ В Instagram</button></a>
             </div>
 
          </div>;

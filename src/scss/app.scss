@@ -1,5 +1,3 @@
-// RESET
-
 // SETTING
 body{
     margin: 0;
@@ -17,108 +15,16 @@ body{
     box-sizing: border-box;
 }
 
-// ANIMATION
-
-
-// HEADER
-// .header{
-// }
-
-.first-navbar{
-    width: 94%;
-    height: 45px;
-    
-    padding: 0px 15px 0px 15px;
-    
-    margin: auto;
-    position: fixed;
-    top: 10px; left: 0; right: 0;
-    z-index: 10;
-
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    
-    border-radius: 20px;
-    background-color: #fff;
-    
+.pageWrapper{
     transition: all .3s;
 }
 
-.first-navbar__logo{
-    width: 13%;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.first-navbar__nav{
-    width: 36%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.first-navbar__link-wrapper{
-    width: fit-content;
-    height: 29px;
-    
-    padding: 2px 9px 6px 9px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 11px;
-    background-color: rgba(0, 0, 0, 0);
-    
-    transition: all 0.6s;
-}
-
-.first-navbar__link-wrapper:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.first-navbar__link{
-    margin: 13px;
-    font-size: 18px;
-
-    text-decoration: none;
-    color: #000;
-}
-
-.first-navbar__button-wrapper{
-    width: 13%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.first-navbar__button{
-    width: 90%;
-    height: 25px;
-
-    border: 0;
-    border-radius: 8px;
-    background-color: #000;
-    color: #fff;
-
-    transition: all .2s;
-}
-
-.first-navbar__button:hover{
-    background-color: rgb(145, 145, 145);
-}
-
-//
+// HEADER
 .second-navbar{
     width: 250px;
     height: 100vh;
-    
-    
-    display: flex; //none
+     
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -148,38 +54,42 @@ body{
 }
 
 .second-navbar__nav{
-    height: fit-content;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.second-navbar__link-wrapper{
-    height: fit-content;
+.second-navbar__nav-button{
     width: fit-content;
-    
-    margin: 25px 0px 25px 0px;
-    padding: 2px 13px 6px 13px;
-    
-    border-radius: 11px;
-    background-color: rgba(0, 0, 0, 0);
-    
-    transition: all 0.6s;
-}
+    height: fit-content;
 
-.second-navbar__link-wrapper:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-}
+    padding: 4px 9px 4px 9px;
 
-.second-navbar__link{
+    background-color: #fff;
+
     font-size: 20px;
-    text-decoration: none;
+    font-weight: 600;
     color: #000;
+    
+    border: 0;
+    border-radius: 12px;
 
-    margin: 20px 0px 0px 0px;
+    transition: all .6s;
+
+    &:hover{
+        background-color: rgb(230, 230, 230);
+    }
 }
 
 .second-navbar__button-wrapper{
     width: 100%;
     height: 50px;
     
+    margin: 30px 0px 0px 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +116,6 @@ body{
     height: 35px;
 }
 
-//
 .header__button-wrapper{
     width: 165px;
     height: 45px;
@@ -229,7 +138,7 @@ body{
     border-radius: 18px;
 
     background-color: rgb(145, 145, 145);
-    transition: all .3s;
+    transition: all .6s;
 }
 
 .header__memu-button:hover{
@@ -269,7 +178,6 @@ body{
     object-fit: cover;
 }
 
-//
 .first-screen__right-side{
     width: fit-content;
     height: 100%;
@@ -311,9 +219,8 @@ body{
 
 .first-screen__title{
     width: 100%;
-    // height: 100%;
 
-    margin: 0px 0px 40px 0px;
+    margin: 15px 0px 40px 0px;
 
     text-align: center;
 
@@ -384,19 +291,20 @@ body{
 }
 
 //PORTFOLIO SECTION
-
 .portfolioSection{
     padding: 120px 0px 0px 0px;
 }
 
 .portfolioSection__tittle{
     width: 100%;
+    height: 100px;
 
     margin: 0px 0px 50px 0px;
 
     color: #fff;
     font-size: calc(30px + 30 * (100vw / 2650));
-    font-weight: 700;
+    font-weight: 900;
+    line-height: 100px;
 
     text-align: center;
 }
@@ -408,7 +316,7 @@ body{
 
     color: #fff;
     font-size: calc(19px + 10 * (100vw / 2650));
-    font-weight: 700;
+    font-weight: 600;
 
     text-align: center;
 }
@@ -483,6 +391,10 @@ body{
     background-color: #000;
 
     transition: all .3s;
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .portfolioSection__button:hover{
@@ -498,12 +410,14 @@ body{
 
 .infoSection__tittle{
     width: 100%;
+    height: 100px;
 
     margin: 0px 0px 50px 0px;
+    padding: 10px 0px 0px 0px;
 
     color: #fff;
     font-size: calc(30px + 30 * (100vw / 2650));
-    font-weight: 700;
+    font-weight: 900;
 
     text-align: left;
 }
@@ -516,7 +430,7 @@ body{
 
     color: rgb(190, 190, 190);
     font-size: calc(19px + 6 * (100vw / 2650));
-    font-weight: 700;
+    font-weight: 600;
 
     text-align: left;
 
@@ -529,6 +443,70 @@ body{
 
 .infoSection__text:active{
     color: #fff;
+}
+
+// FOOTER
+.footer{
+    width: 100%;
+    height: 200px;
+
+    padding: 0px 16px 0px 16px;
+}
+
+.footer__tittle{
+    width: 100%;
+
+    font-size: calc(30px + 30 * (100vw / 2650));
+    font-weight: 900;
+    text-align: center;
+
+    color: #fff;
+}
+
+.footer__icon-wrapper{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.footer__icon{
+    width: calc(40px + 40 * (100vw / 2650));
+    height: calc(40px + 40 * (100vw / 2650));
+
+    font-size: calc(40px + 40 * (100vw / 2650));
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .4s;
+}
+
+.footer__icon:hover{
+    width: calc(60px + 40 * (100vw / 2650));
+    height: calc(60px + 40 * (100vw / 2650));
+
+    font-size: calc(60px + 40 * (100vw / 2650));
+}
+
+._icon-instagram:hover{
+    color: rgb(255, 0, 85);
+}
+
+._icon-telegram:hover{
+    color: rgb(0, 140, 255);
+}
+
+._icon-viber:hover{
+    color: rgb(174, 0, 255);
 }
 
 // MEDIA
@@ -590,17 +568,38 @@ body{
     .first-screen__button-wrapper{
         flex-direction: column;
     }
+
+    .portfolioSection{
+        padding: 50px 0px 0px 0px;
+    }
 }
 
 // MODIFICATOR
-.--displayNone{
-    display: none;
-}
-
 .--opacityZero{
     opacity: 0;
 }
 
 .--rightZero{
     right: 0;
+}
+
+.--menuOn{
+    opacity: .2;
+}
+
+.--overflovHidden{
+    overflow: hidden;
+}
+
+.--fullScreenIMG{
+    max-height: 100%;
+
+    margin: 25% 0px 0px 25%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+
+    object-fit: none;
 }

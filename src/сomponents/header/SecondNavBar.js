@@ -1,20 +1,71 @@
 import React from 'react';
 
 function closeMenu() {
-    const secondNavbar = document.querySelector('.second-navbar');
+    document.querySelector('.second-navbar').classList.remove('--rightZero');
+    document.querySelector('.pageWrapper').classList.remove('--menuOn');
+    document.querySelector('body').classList.remove('--overflovHidden');
+}
 
-    secondNavbar.classList.remove('--rightZero');
+function scrolToPortfolio() {
+    let coordinates = document.querySelector("#portfolio").getBoundingClientRect().top + window.pageYOffset;
+    
+    window.scrollTo({
+        top: coordinates,
+        behavior: "smooth"
+    });
+    
+    document.querySelector('.second-navbar').classList.remove('--rightZero');
+    document.querySelector('.pageWrapper').classList.remove('--menuOn');
+    document.querySelector('body').classList.remove('--overflovHidden');
+}
+
+function scrolToPrice() {
+    let coordinates = document.querySelector("#price").getBoundingClientRect().top + window.pageYOffset;
+    
+    window.scrollTo({
+        top: coordinates,
+        behavior: "smooth"
+    });
+
+    document.querySelector('.second-navbar').classList.remove('--rightZero');
+    document.querySelector('.pageWrapper').classList.remove('--menuOn');
+    document.querySelector('body').classList.remove('--overflovHidden');
+}
+
+function scrolToСontact() {
+    let coordinates = document.querySelector("#contact").getBoundingClientRect().top + window.pageYOffset;
+    
+    window.scrollTo({
+        top: coordinates,
+        behavior: "smooth"
+    });
+    
+    document.querySelector('.second-navbar').classList.remove('--rightZero');
+    document.querySelector('.pageWrapper').classList.remove('--menuOn');
+    document.querySelector('body').classList.remove('--overflovHidden');
 }
 
 export default function SecondNavBar() {
   return <div className="second-navbar">
                 
-            <div className="second-navbar__logo">vovkttt</div>
+            <div className="second-navbar__logo">Tattoo</div>
             
             <nav className="second-navbar__nav">
-                <div className="second-navbar__link-wrapper"> <a href="#" className="second-navbar__link">Портфолио</a></div>
-                <div className="second-navbar__link-wrapper"> <a href="#" className="second-navbar__link">Цены</a></div>
-                <div className="second-navbar__link-wrapper"> <a href="#" className="second-navbar__link">Контакты</a></div>
+                <button 
+                    onClick={scrolToPortfolio}
+                    className="second-navbar__nav-button">
+                    Портфолио
+                </button>
+                <button 
+                    onClick={scrolToPrice}
+                    className="second-navbar__nav-button">
+                    Цены
+                </button>
+                <button 
+                    onClick={scrolToСontact}
+                    className="second-navbar__nav-button">
+                    Контакты
+                </button>
             </nav>
 
             <div className="second-navbar__button-wrapper">
