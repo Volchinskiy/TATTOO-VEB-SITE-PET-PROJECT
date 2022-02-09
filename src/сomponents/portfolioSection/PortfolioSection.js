@@ -29,9 +29,41 @@ import img19 from './../../img/portfolioImg/portfolio7Row/1.jpg';
 import img20 from './../../img/portfolioImg/portfolio7Row/2.jpg'; 
 import img21 from './../../img/portfolioImg/portfolio7Row/3.jpg';
 
+function showAndHidePopup(){
+    const section = document.querySelector('.portfolioSection');
+    const popupDiv = document.querySelector('.portfolioSection__popup');
+    let currentElement;
+   
+    section.addEventListener('click', function(event){
+        currentElement = event.target;
+
+        if(popupDiv.classList.contains('--popupShow')){
+            document.querySelector('body').classList.remove('--overflovHidden');
+            
+            let removeImg = popupDiv.children;
+            popupDiv.removeChild(removeImg[0]);
+
+            document.querySelector('.portfolioSection__popup').classList.remove('--popupShow');
+
+        }else if(currentElement.src !== undefined){
+            let copyImg = document.createElement('img');
+            copyImg.src = currentElement.src;
+
+            document.querySelector('.portfolioSection__popup').classList.add('--popupShow');
+            
+            popupDiv.appendChild(copyImg);
+            
+            document.querySelector('body').classList.add('--overflovHidden');
+        }
+    })
+}
+
+setTimeout(showAndHidePopup, 0);
+
 export default function PortfolioSection() {
   return <div className="portfolioSection"> 
 
+            <div className="portfolioSection__popup"></div>
             <div className="portfolioSection__tittle" id="portfolio">Портфолио</div>
             <div className="portfolioSection__subtittle">Графика-Дотворк</div>
 
