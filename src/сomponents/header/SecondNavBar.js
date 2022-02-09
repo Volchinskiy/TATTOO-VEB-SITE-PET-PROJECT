@@ -17,6 +17,7 @@ function scrolToPortfolio() {
     document.querySelector('.second-navbar').classList.remove('--rightZero');
     document.querySelector('.pageWrapper').classList.remove('--menuOn');
     document.querySelector('body').classList.remove('--overflovHidden');
+    document.querySelector(".header__button-wrapper").classList.add('--menuButtonHide');
 }
 
 function scrolToPrice() {
@@ -30,6 +31,7 @@ function scrolToPrice() {
     document.querySelector('.second-navbar').classList.remove('--rightZero');
     document.querySelector('.pageWrapper').classList.remove('--menuOn');
     document.querySelector('body').classList.remove('--overflovHidden');
+    document.querySelector(".header__button-wrapper").classList.add('--menuButtonHide');   
 }
 
 function scrolToСontact() {
@@ -43,6 +45,7 @@ function scrolToСontact() {
     document.querySelector('.second-navbar').classList.remove('--rightZero');
     document.querySelector('.pageWrapper').classList.remove('--menuOn');
     document.querySelector('body').classList.remove('--overflovHidden');
+    document.querySelector(".header__button-wrapper").classList.add('--menuButtonHide');
 }
 
 export default function SecondNavBar() {

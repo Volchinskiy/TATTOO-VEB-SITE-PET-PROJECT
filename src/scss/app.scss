@@ -11,6 +11,7 @@ body{
 
     font-family: 'Raleway';
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -134,6 +135,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all .6s;
 }
 
 .header__memu-button{
@@ -142,6 +145,7 @@ body{
 
     border: 0;
     border-radius: 18px;
+    color: #000;
 
     background-color: rgb(145, 145, 145);
     transition: all .6s;
@@ -304,7 +308,7 @@ body{
 
 .portfolioSection__popup{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
 
     position: fixed;
     top: 0;
@@ -478,7 +482,7 @@ body{
 // FOOTER
 .footer{
     width: 100%;
-    height: 200px;
+    height: 300px;
 
     padding: 0px 16px 0px 16px;
 }
@@ -500,10 +504,25 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
 
-    a{
-        text-decoration: none;
-    }
+.footer__link{
+    width: calc(80px + 45 * (100vw / 2650));
+    height: calc(80px + 45 * (100vw / 2650));
+
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: calc(19px + 6 * (100vw / 2650));
+    font-weight: 600;
 }
 
 .footer__icon{
@@ -533,6 +552,10 @@ body{
 
 ._icon-telegram:hover{
     color: rgb(0, 140, 255);
+}
+
+._icon-whatsapp:hover{
+    color: rgb(0, 221, 18);
 }
 
 ._icon-viber:hover{
@@ -569,6 +592,7 @@ body{
     }
 
     .portfolioSection__popup{
+        // height: 110vh;
         overflow-x: auto;
 
         img{
@@ -643,4 +667,8 @@ body{
 .--popupShow{
     opacity: 1;
     visibility: visible;
+}
+
+.--menuButtonHide{
+    top: -50px;
 }

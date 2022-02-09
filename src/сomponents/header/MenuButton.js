@@ -6,21 +6,24 @@ function openMenu() {
   document.querySelector('body').classList.add('--overflovHidden');
 }
 
-// function hideAndShow() {
-//   let prevScrollpos = window.pageYOffset;
-//   window.onscroll = function() {
+function hideAndShowButton() {
+  let prevScrollpos = window.pageYOffset;
+  window.addEventListener('scroll', function() {
     
-//     let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     
-//     if (prevScrollpos > currentScrollPos) {
-//       document.querySelector(".header__button-wrapper").style.top = "0";
-//     } else {
-//       document.querySelector(".header__button-wrapper").style.top = "-50px";
-//     }
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".header__button-wrapper").classList.remove('--menuButtonHide');
+    } else {
+      document.querySelector(".header__button-wrapper").classList.add('--menuButtonHide');
+    }
     
-//     prevScrollpos = currentScrollPos;
-//   }
-// }
+    prevScrollpos = currentScrollPos;
+  });  
+}
+
+setTimeout(hideAndShowButton,0);
+
 
 export default function MenuButton() {
   return <div className="header__button-wrapper">
