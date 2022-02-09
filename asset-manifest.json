@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tattoo-veb-site/static/css/main.03f09769.css",
+    "main.css": "/tattoo-veb-site/static/css/main.26ea8dbd.css",
     "main.js": "/tattoo-veb-site/static/js/main.5b190f84.js",
     "static/media/inductionPng.png": "/tattoo-veb-site/static/media/inductionPng.91813a1e427a9ee542ce.png",
     "static/media/1.jpg": "/tattoo-veb-site/static/media/1.fbe85befb95dacf7edeb.jpg",
@@ -10,11 +10,11 @@
     "static/media/Raleway.ttf": "/tattoo-veb-site/static/media/Raleway.3fefe681f4c62116679b.ttf",
     "static/media/iconsFont.ttf?g6lc9j": "/tattoo-veb-site/static/media/iconsFont.7e547ef88cb230a46f6c.ttf",
     "index.html": "/tattoo-veb-site/index.html",
-    "main.03f09769.css.map": "/tattoo-veb-site/static/css/main.03f09769.css.map",
+    "main.26ea8dbd.css.map": "/tattoo-veb-site/static/css/main.26ea8dbd.css.map",
     "main.5b190f84.js.map": "/tattoo-veb-site/static/js/main.5b190f84.js.map"
   },
   "entrypoints": [
-    "static/css/main.03f09769.css",
+    "static/css/main.26ea8dbd.css",
     "static/js/main.5b190f84.js"
   ]
 }
