@@ -6,7 +6,6 @@ body {
   background-color: black;
   font-family: "Raleway";
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -17,6 +16,16 @@ body {
 .pageWrapper {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #919191;
+  border-radius: 5px;
 }
 
 .second-navbar {
