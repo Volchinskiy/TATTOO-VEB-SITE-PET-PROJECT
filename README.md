@@ -2,7 +2,7 @@
 
 This is a landing-page for a tattoo ARTIST that presents his work and tells what services he provides and how to contact.
 
-It is written using react
+It is written using React.
 
 To run the project you need:
 1) Clone a branch called "currentProjectHome".
